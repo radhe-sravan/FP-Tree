@@ -44,6 +44,11 @@ int main()
 
 	// writing the fptree output
 
+	if(fopen(fpTreeOutputFile,"r") != NULL)
+	{
+		remove(fpTreeOutputFile);
+	}
+
 	fpTreeFile = fopen(fpTreeOutputFile,"a");
 	fprintf(fpTreeFile,"\n Pre-order traversal of the FP Tree generated is as shown below.\n\n Numbers in () indicate the support count of the node.\n\n");
 	printTree(root);
