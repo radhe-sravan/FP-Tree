@@ -175,6 +175,7 @@ void readInput()
 	free(string);
 	free(tokensArray);
 	fclose(file1);
+	remove(inputFile);
 } 
 
 // method to sort the transactions
