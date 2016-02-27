@@ -8,7 +8,7 @@ char fpTreeOutputFile[50] = "fptree.txt";						// output file for the tree
 int numItems; 										// number of items
 int numTransactions; 									// number of transactions
 
-float minSup = 10; 									// minimum support for a frequent itemset
+float minSup = 3; 									// minimum support for a frequent itemset
 float minConf = 50;									// minimum confidence
 		
 char *seperator = ",";									// item seperator in transactions file
