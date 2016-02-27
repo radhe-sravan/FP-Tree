@@ -1,1 +1,16 @@
-This is a git repository for FP tree implementation in C. Check the project wiki for the details on usage and explanation of code.
+This is a git repository for FP tree implementation in C. Check the project wiki for the explanation of code.
+
+USAGE
+
+Pre-requisites :
+
+1. Populate the transactions.txt file with the required transactions with each transaction in a new line and each item in a transaction seperated by a comma (,).
+2. Change the minSup and minConf values in fpgrowth in accordance with the transactions populated.
+
+Compiling the code : 
+
+Run 'make' in the home directory of the project. This generates the output file 'fpgrowth' in the same directory.
+
+Running the code :
+
+Run './fpgrowth' in the home directory of project. The list of all items along with their frequency count will be written on the console and the preorder traversal of the FP tree will be written in the fptree.txt file.
